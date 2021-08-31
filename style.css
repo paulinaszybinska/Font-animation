@@ -1,0 +1,61 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import url(https://fonts.google.com/specimen/Monoton);
+
+body{
+    background-color: #d4d4d4;
+}
+
+.main-text {
+    margin: 150px 30px;
+}
+
+svg {
+    display: block;
+    font: 6.5em 'Monoton';
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;   
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #808080;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #191919;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #f9ff87;
+	animation-delay: -5s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #545454;
+	animation-delay: -7s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #191919;
+	animation-delay: -9s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: 35%;}
+}
